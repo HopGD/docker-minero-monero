@@ -52,7 +52,7 @@ Si no tienes wallet de Monero, puedes crear una en:
 - **Monero GUI** (escritorio)
 - **Exodus**, **Binance**, **Coinbase** (exchanges)
 
-## Pooles recomendados
+## Pools recomendados
 
 - `pool.supportxmr.com:3333` (SSL: 14444)
 - `xmr.pool.eu.nicehash.com:3333`
