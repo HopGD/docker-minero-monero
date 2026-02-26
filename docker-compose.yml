@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  miner:
+    build: .
+    container_name: xmrig-miner
+    restart: unless-stopped
+    cpus: 4
+    command:
+      - "-o"
+      - "pool.supportxmr.com:3333"
+      - "-u"
+      - "TU_WALLET"
+      - "-p"
+      - "docker"
+      - "--cpu-max-threads-hint=75"
