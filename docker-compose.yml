@@ -5,7 +5,7 @@ services:
     build: .
     container_name: xmrig-miner
     restart: unless-stopped
-    cpus: 4
+    cpus: 10.5
     command:
       - "-o"
       - "pool.supportxmr.com:3333"
