@@ -5,10 +5,9 @@ services:
     build: .
     container_name: xmrig-miner
     restart: unless-stopped
-    cpus: 10.5
-    mem_limit: 4g
+    privileged: true
     volumes:
-      - /mnt/hugepages:/mnt/hugepages
+      - /dev/hugepages:/dev/hugepages:rw
     command:
       - "-o"
       - "pool.supportxmr.com:3333"
@@ -17,4 +16,3 @@ services:
       - "-p"
       - "docker"
       - "--cpu-max-threads-hint=75"
-      - "--randomx-1gb-pages"
